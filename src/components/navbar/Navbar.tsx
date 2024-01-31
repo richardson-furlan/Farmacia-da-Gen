@@ -1,4 +1,5 @@
 import {FirstAidKit, ShoppingCart} from '@phosphor-icons/react'
+import { Link } from 'react-router-dom'
 
 
 function Navbar() {
@@ -9,13 +10,13 @@ function Navbar() {
           <div className="container flex justify-between text-lg">  
             <div className='flex gap-1 ml-3 text-2xl font-bold uppercase'>
                 <FirstAidKit size={32} />
-                GenFarma
+                <Link to='/home' className='hover:underline'>GenFarma</Link>
                 </div>
 
             <div className='flex gap-4'>
               <div className='hover:underline'>Produtos</div>
-              <div className='hover:underline'>Categoria</div>
-              <div className='hover:underline'>Cadastrar Categoria</div>
+              <Link to='/categorias' className='hover:underline'>Categoria</Link>
+              <Link to='/cadastroCategorias' className='hover:underline'>Cadastrar Categoria</Link>
               <div className='hover:underline'><ShoppingCart size={32} /></div>
               
             </div>
