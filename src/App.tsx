@@ -1,12 +1,15 @@
-function App() {
+import './App.css';
+import Home from './pages/home/Home';
+import Navbar from './components/navbar/NavBar';
+import Footer from './components/footer/Footer';
 
+function App() {
   return (
     <>
-      <p>
-        Isso será uma farmacia online
-      </p>
+    <Navbar/>
+    <Home/>
+    <Footer/>
     </>
-  )
+);
 }
-
-export default App
+export default App;
